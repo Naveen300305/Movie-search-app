@@ -1,16 +1,44 @@
-# React + Vite
+🎬 Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean movie searching app built with React. It allows users to look up any movie using TMDB API and also displays a Trending Movies section powered by a small backend built with Appwrite.
 
-Currently, two official plugins are available:
+This project was mainly created to practice APIs, React hooks, debouncing, and using Appwrite as a backend service.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+🔍 Movie Search
 
-## React Compiler
+-Search for any movie in real time.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-Results load smoothly using a debounced search (prevents extra API calls).
 
-## Expanding the ESLint configuration
+-Each movie card shows title, poster, rating, and release info.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔥 Trending Movies
+
+-Displays the currently trending movies on the home page.
+
+-Trending list is fetched from an Appwrite database where the movie details are stored.
+
+-Appwrite acts as a mini backend to manage and update trending data.
+
+🎨 Clean UI
+
+-Simple, minimal UI for a distraction-free experience.
+
+-Responsive design that works on desktop and mobile.
+
+🛠️ Tech Stack
+
+Frontend:
+
+React (Vite)
+
+Tailwind CSS
+
+Backend / Storage:
+
+Appwrite (Database + project functions)
+
+API:
+
+The Movie Database (TMDB)
